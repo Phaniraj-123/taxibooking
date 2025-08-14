@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="taxibook.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <script src="sidebar.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcyfDks1O_vQ2bGXmW5ttNiIk7h1aIldc&libraries=places" defer></script>
+
+</head>
+
+<body>
+   
+
+  <div class="head" style="background-image: url('taxxi.jpg');background-position:40%;height: 600px;">
+
+
+    <ul>
+      <li style="margin-top: 7px; touch-action: pinch-zoom;"><a href="taxi.html"><i class="fa-regular fa-circle-user fa-2xl" style="color: #000000;"></i></a></li>
+      <h3 style="margin-right: 810px; margin-left: 20px;"><a href="#choos"
+          style="text-decoration: none; color: black;"><span style="font-family: cursive;">Book</span>MyTAXI</a></h3>
+      <li>Home</li>
+      <li><a href="#abut" style="text-decoration: none;color: black;">About</a></li>
+      <li>address</li>
+      <li>contact</li>
+      <li>Email</li>
+    </ul>
+
+    <div class="search">
+      <form action="/search-location" method="GET"></form>
+      
+      <label for="">search</label> <input type="search" placeholder=" where you headed..?"
+        style="width: 190px; background-color: aliceblue;">
+    </div>
+
+  </div>
+
+  <div class="nav" style="background-color:transparent;opacity:inherit;">
+    <label style="margin-right:130px; font-size:xx-large;margin-top: 25px;">pickup</label>
+    <br>
+    <input type="text" placeholder="    pickup">
+    <br>
+    <label style="margin-right:150px; font-size: xx-large">drop</label>
+    <br>
+    <input type="text" placeholder="     drop">
+    <br>
+    <button style="background-color:whitesmoke;color: rgb(1, 12, 21);">Go</button>
+  </div>
+
+  <br>
+
+  <div class="choose" id="choos">
+    <h2 style="margin-top: 200px;color: yellow;background-color: rgb(56, 52, 52);width: 500px;animation:ease-in-out;">
+      CHOOSE YOUR CAR</h2>
+  </div>
+
+  <div class="bootstrap" style=" display:flex; gap: 30px;justify-content: center;">
+
+    <div class="card" style="width: 18rem;">
+      <img src="innova.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Innova Crysta</h5>
+        <p class="card-text">
+          charge:15/KM
+          Model:2020 <br>
+          seating:6 seater <br>
+          & 7 seater
+
+        </p>
+        <a href="#" class="btn btn-warning">enquire</a> <a href="#" class="btn btn-primary">book</a>
+      </div>
+    </div>
+
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="ertiga.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Maruti Ertiga</h5>
+        <p class="card-text">
+          charge:15/KM
+          Model:2020 <br>
+          seating:7 seater <br>
+          & 8 seater
+        </p>
+        <a href="#" class="btn btn-warning">enquire</a> <a href="#" class="btn btn-primary">book</a>
+      </div>
+    </div>
+
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="swift.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Swift Dezire</h5>
+        <p class="card-text">
+          charge:12/KM
+          Model:2020 <br>
+          seating:4 seater <br>
+          & 5 seater
+        </p>
+        <a href="#" class="btn btn-warning">enquire</a> <a href="#" class="btn btn-primary">book</a>
+      </div>
+    </div>
+
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="etios.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Etios</h5>
+        <p class="card-text">
+          charge:10/KM
+          Model:2020 <br>
+          seating:4 seater <br>
+          & 5 seater
+        </p>
+        <a href="#" class="btn btn-warning">enquire</a> <a href="#" class="btn btn-primary">book</a>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <!-- 2nd bootstrap card property -->
+  <div style="box-shadow: #2d6ad2;">
+    <div class="bootstrap1" style=" display:flex; gap: 30px;justify-content: center;">
+
+      <div class="card" style="width: 18rem;box-shadow: #2d6ad2;">
+        <img src="innova.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Innova Crysta</h5>
+          <p class="card-text">
+            charge:15/KM
+            Model:2020 <br>
+            seating:6 seater <br>
+            & 7 seater
+
+          </p>
+          <a href="#" class="btn btn-warning">enquire</a> <a href="#" class="btn btn-primary">book</a>
+        </div>
+      </div>
+
+
+
+      <div class="card" style="width: 18rem;">
+        <img src="ertiga.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Maruti Ertiga</h5>
+          <p class="card-text">
+            charge:15/KM
+            Model:2020 <br>
+            seating:7 seater <br>
+            & 8 seater
+          </p>
+          <a href="#" class="btn btn-warning">enquire</a> <a href="#" class="btn btn-primary"
+            style="margin-left: 10s0px;">book</a>
+        </div>
+      </div>
+
+
+
+      <div class="card" style="width: 18rem;">
+        <img src="swift.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Swift Dezire</h5>
+          <p class="card-text">
+            charge:12/KM
+            Model:2020 <br>
+            seating:4 seater <br>
+            & 5 seater
+          </p>
+          <a href="#" class="btn btn-warning">enquire</a> <a href="#" class="btn btn-primary">book</a>
+        </div>
+      </div>
+
+
+
+      <div class="card" style="width: 18rem;">
+        <img src="etios.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Etios</h5>
+          <p class="card-text">
+            charge:10/KM
+            Model:2020 <br>
+            seating:4 seater <br>
+            & 5 seater
+          </p>
+          <a href="#" class="btn btn-warning">enquire</a> <a href="#" class="btn btn-primary">book</a>
+        </div>
+      </div>
+
+
+    </div>
+    <br><br>
+    <!-- driver details -->
+   
+    <!-- MOBILE APP ADVERTISE -->
+    <section
+      style="background-color: rgba(244, 246, 244, 0.936); height: 600px; border-radius: 20px; width: 1400px; margin-left: 55px;">
+      <div>
+        <h4 style="text-align: center;">Make it easy for you</h4>
+      </div>
+
+      <div style="display: flex;">
+        <div style="position: relative;text-align:left;margin-top: 60px;margin-left: 30px;">
+          <h3>Download our app</h3><br><br>
+          <button style="border-radius: 7px;"><a href="https://play.google.com/store/apps/details?id=BookMyTAXI"
+              target="_blank" style="text-decoration: none;">
+              <div
+                style="display: inline-block; background-color:black; color: white; padding: 10px 20px; border-radius: 5px; font-family: Arial, sans-serif; font-size: 16px;">
+                Google Play <i class="fa-brands fa-google-play" style="color: #e2e5e6;"></i>
+          </button>
+          <button style="border-radius: 7px;">
+            <a href="https://apps.apple.com/app/details?id=YOUR_APP_ID" target="_blank" style="text-decoration: none;">
+              <div
+                style="display: inline-block; background-color:rgb(14, 14, 14); color: white; padding: 10px 20px; border-radius: 5px; font-family: Arial, sans-serif; font-size: 16px;">
+                App store <i class="fa-brands fa-app-store"></i>
+            </a>
+
+          </button>
+        </div>
+        <div>
+          <img src="apptaxi.webp" alt="Download our app" height="460px" style="position: absolute;margin-left: 600px;">
+        </div>
+      </div>
+    </section>
+    <br><br>
+    <!-- self Branding section -->
+    <div style="height: 600px; " >
+      <div style="display: flex; position: relative; margin-left: 500px;">
+        <h4>what makes <h3><a href="#choos" style="text-decoration: none; color: rgb(249, 217, 11);"><span
+                style="font-family: cursive;"> Book</span>MyTAXI</a>
+            <h4>special?</h4>
+          </h3>
+      </div>
+      <h4 style="margin-left: 260px;">who are we?</h4>
+      <div style="display: flex;">
+        
+        <div class="scroll-container">
+          <p>
+            Founded with a vision to make transportation seamless and accessible, <a href="#choos"
+              style="color: rgb(235, 7, 7);text-decoration: none;">BookMyTAXI</a> was built on the core principles of
+            punctuality, transparency, and customer satisfaction. We understand the everyday challenges commuters face,
+            from unpredictable wait times to unclear pricing, and we aim to eliminate these concerns by offering a
+            smarter, faster, and more efficient taxi booking experience.
+
+            Whether you're heading to work, catching a flight, going to an event, or just running errands, our platform
+            connects you with professional drivers at the tap of a button. From solo travelers to families and corporate
+            clients, our services are designed to cater to all types of passengers.
+
+          <h4>What We Offer?</h4><br>
+          <H5>24/7 Taxi Booking:</H5> No matter the hour, we’re always available. Book a ride anytime, anywhere.
+
+          <h5>Easy-to-Use Platform:</h5> Our intuitive website and app allow you to book, track, and manage your rides
+          effortlessly.
+
+          <h5>Verified Drivers:</h5> We carefully vet and train our drivers to ensure safety, professionalism, and
+          courtesy.
+
+          <h5>Upfront Pricing:</h5> Know your fare before you ride. No hidden charges, no surprises.
+
+          <h5>Multiple Vehicle Options:</h5> Choose from a range of vehicles to suit your needs — from budget-friendly
+          rides to premium cars.
+
+          <h5>Secure Payment Options:</h5> Enjoy safe and flexible payment methods, including cashless transactions.
+
+          <h4>Our Mission</h4> <br>
+          Our mission is simple — to redefine urban mobility by offering a taxi service that people can truly rely on.
+          We aim to empower passengers with choices, drivers with opportunities, and cities with sustainable transport
+          solutions.
+
+          <h4>Our Vision</h4>
+          To become the most trusted and preferred taxi booking platform across regions by continuously enhancing the
+          rider experience through innovation, technology, and customer-centric services.
+
+          <h3>Why Choose Us?</h3> <br>
+          <h5>Reliability:</h5> We pride ourselves on being punctual and dependable, every single time.
+
+          <h5>Customer Support:</h5> Our dedicated support team is always ready to assist you with your bookings,
+          feedback, or queries.
+
+          <h5>Technology-Driven:</h5> We leverage modern technologies to optimize routes, reduce wait times, and ensure
+          smooth user experiences.
+
+          <h5>Community-Focused:</h5> We care about our customers and the communities we serve. We constantly work
+          toward improving accessibility and sustainability.
+
+          <h4>Looking Ahead</h4>
+          At [Your Company Name], we’re not just driving cars — we’re driving change. As we continue to grow and expand
+          our network, we remain committed to delivering safe, smooth, and superior transportation solutions for
+          everyone.
+
+          Thank you for choosing us. Your journey begins here.
+
+
+
+          </p>
+        </div>
+           <div>
+              <img src="booking.jpg" alt="" style="width: 700px; height: 500px; margin-left: 45px;">
+          </div>
+      </div>
+     
+          <br><br>
+        <!-- ABOUT SECTION -->
+
+        <div class="about" id="abut" style="background-color: rgb(24, 23, 23); height: 390px;">
+          <div style="justify-content: center;">
+            <!-- <h3 style="background-color: yellow; color: black;width: 200px;height: 200px; margin-left: 40px; text-align: center;padding: 70px 15px;">MyTAXI</h3> -->
+            <h4 style="margin-left: 600px;padding-top:100px;color: aliceblue;">📞contact us: <a href="">9876545678</a> ,
+              <a href="">080-876567</a></h4>
+            <h4 style="margin-left: 600px;padding-top:10px;color: aliceblue;">📩mail us: <a href="">mytaxi@gmail.com</a>
+            </h4>
+            <h5 style="margin-left: 600px;padding-top:10px;color: aliceblue;">📍Address: <p>myTAXI office <br> 6th cross
+                Rd,PWD quarters, 1 st sector,<br>reliable residence,bengaluru 567877</p>
+            </h5>
+            <h5 style="margin-left: 600px;padding-top:10px;color: aliceblue;display: inline;">social media: <i
+                class="fa-brands fa-square-whatsapp fa-xl" style="color: #63E6BE;"></i> <i
+                class="fa-brands fa-instagram fa-xl" style="color: #d22d8d;"></i>
+              <i class="fa-brands fa-twitter fa-xl" style="color: #2d6ad2;"></i> <i class="fa-brands fa-telegram fa-xl"
+                style="color: #527cdd;"></i>
+            </h5>
+            <p style="margin-left: 600px;padding-top:10px;color: aliceblue; opacity:0.5;">©All Rights Reserved</p>
+          </div>
+
+
+        </div>
+
+</body>
+
+</html>

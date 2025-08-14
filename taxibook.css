@@ -1,0 +1,89 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+ul{
+    display: flex;
+    background-color: rgb(231, 231, 12);
+    gap: 30px;
+    list-style: none;
+    font-size: medium;
+}
+
+div.search{
+    margin-left: 620px;
+    margin-top: 60px;
+    font-size: larger;
+    
+}
+
+
+div.nav{
+   position: absolute;
+   height: 300px;
+   width: 250px;
+   top: 20%;
+   left: 41%;
+   border: solid yellow;
+   border-radius: 9px;
+   font-size:large;
+   text-align: center;
+   line-height: 20px;
+   justify-content: center;
+
+    
+}
+label{
+    color: rgb(8, 8, 1);
+    text-align:center;
+    font-weight: 600;
+    
+}
+input{
+    
+    background-color: rgb(249, 249, 249);
+    height: 30px;
+    width: 170px;
+    border-radius: 9px;
+    border-color: yellow;
+    font-size: small;
+ 
+}
+.nav button{
+    height: 35px;
+    width: 80px;
+    border-radius: 12px;
+}
+
+.fawsome{
+    margin-left: 30px;
+    line-height: 30px;
+    width: fit-content;
+}
+
+.card { 
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 2px rgba(164, 174, 123, 0.964); /* Horizontal offset, Vertical offset, Blur radius, Spread radius, Color */
+  padding: 20px;
+}
+
+
+
+.scroll-container {
+      width: 600px; /* Set the width */
+      height: 500px; /* Set the height */
+      overflow-y: scroll; /* Enable vertical scrolling */
+      border: 3px solid #010000; /* Add a border for visibility */
+      padding: 10px;
+      background-color: #f9f9f9; /* Light background color */
+      margin-left: 50px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px 2px rgba(166, 165, 173, 0.964);
+    }
+
+   
