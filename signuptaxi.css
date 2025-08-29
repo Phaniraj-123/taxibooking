@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+div{
+   position: absolute;
+   height: 300px;
+   width: 250px;
+   top: 30%;
+   left: 41%;
+   background-color: yellow;
+   text-align: center;
+   border: solid black;
+   border-radius: 9px;
+}
